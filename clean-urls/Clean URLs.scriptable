@@ -1,0 +1,13 @@
+{
+  "always_run_in_app" : false,
+  "icon" : {
+    "color" : "deep-brown",
+    "glyph" : "magic"
+  },
+  "name" : "Clean URLs",
+  "script" : "let url = args.urls\n\nif (typeof url !== 'string') {\n  url = url.toString()\n}\n\nif (url.length > 0 && url.includes('?')) {\n  url = url.split('?')[0]\n} else {\n  let notification = new Notification()\n  notification.title = 'No URL Found'\n  notification.body = 'Please, add a URL'\n  notification.schedule('no-url-found-notification')\n}\n\nPasteboard.copyString(url)\n\nShareSheet.present([url])\n\nlet notification = new Notification()\nnotification.title = 'URL Cleaned'\nnotification.body = url\nnotification.schedule('cleaned-url-notification')\n\nurl",
+  "share_sheet_inputs" : [
+    "url",
+    "file-url"
+  ]
+}
