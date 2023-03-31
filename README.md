@@ -8,5 +8,5 @@ To download Scriptable on your iPhone, visit the [App Store Page](https://apps.a
 
 ## First Script:
 
-[Clean URLs](./clean-urls/) : A script that cleans up URLs by removing tracking parameters and other unnecessary parts of the URL, copies the cleaned URL to the clipboard, and displays a Share Sheet with the cleaned URL. [Get Scriptable Script](./clean-urls/Clean%20URLs.scriptable)
+[Clean URLs](./clean-urls/) : A script that cleans up URLs by removing tracking parameters and other unnecessary parts of the URL, copies the cleaned URL to the clipboard, and displays a Share Sheet with the cleaned URL. [Get Scriptable Script](https://github.com/adhamfarrag/scriptable-scripts/blob/main/clean-urls/Clean%20URLs.scriptable "Download")
 
